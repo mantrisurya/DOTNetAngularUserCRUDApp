@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="page-header">
+    <h1>User Details.</h1>
+  </div>
+</div>
+<p>
+  <a [routerLink]="['/insert-user']">Create new user</a>
+</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th> User ID </th>
+      <th> User Name </th>
+      <th> Email </th>
+      <th> Mobile No </th>
+      <th> Status </th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of productList">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>
+      <td>
+        <a [routerLink]="['/user-edit/', item.id]">Edit</a> |
+        <a [routerLink]="" (click)="delete(item.id, item.productCode)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
